@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mr john ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- -------------------------------------- product details -->
+    <ul class="mini-menu position-fixed   p-3 gap-0 rounded-4 bg-light ">
+        <li onclick="window.location.href = 'index.html'" class="col-3 d-flex flex-column justify-content-center align-items-center active  ">
+            <i class=" p-2 rounded-2 justify-content-center w-100 align-items-center d-flex  fs-4 bi bi-house"></i>
+                <span>الرئيسية</span>
+            </li>
+
+            <li onclick="window.location.href = 'products.html'" class="col-3 d-flex flex-column justify-content-center align-items-center   ">
+                    <i class="p-2 rounded-2  justify-content-center w-100 align-items-center d-flex fs-4 bi bi-cart"></i>
+                    <span>المتجر</span>
+            </li>
+
+            <li  class="col-3 d-flex flex-column justify-content-center align-items-center   ">
+                    <i class=" cart-icon p-2 rounded-2  justify-content-center w-100 align-items-center d-flex fs-4 bi bi-cart"></i>
+                    <span>العربة: <span class=" cart-count">0</span></span>
+
+            </li>
+    
+            </li>
+            <li class="col-3 d-flex  flex-column justify-content-center align-items-center ">
+                <i class=" list-icon p-2 rounded-2  justify-content-center w-100 align-items-center d-flex wish-icon  fs-4 bi bi-bag-heart"></i>
+                <span>المفضلة : <span class=" list-count">0</span> </span>
+            </li>
+    
+
+    </ul>
+    <!-- ---------------------mini menu -->
+
+    <article class="wish-list position-fixed  top-0 ">
+        <article class="list-head p-3  mb-4 align-items-center justify-content-between d-flex">
+            <i class=" fs-3 bi bi-x-circle text-white  remove-list "></i>
+            <article class="search p-2 ">
+                <input class="search-input" type="text" placeholder="search your product ">
+                <i class=" active search-icon bi bi-search text-white"></i>
+            </article>
+        </article>
+        <article class="wished-products p-3"></article>
+    </article>
+    <!-- -------------------------------wishlist -->
+<article class="shopping-cart">
+    <article class="cart-content"></article>
+    <article class="cart-btns">
+        <h3 class="subtotal">الإجمالي: 0 جنيه </h3>
+        <a class="checkout-btn" href="checkout.html">إتمام الشراء</a>
+    </article>
+    <i class="fs-3 bi bi-x-circle text-white remove-cart"></i>
+</article>
+    <!-- -------------------------------end cart --------------------------->
+        <!-- ------------------------------------------end components -->
+
+        <header class="  w-100   position-fixed top-0 start-0 "> 
+        <article class="introduction  d-flex justify-content-between align-items-center">
+<ul>
+    <li>
+        <a href="https://www.facebook.com/share/15aGQceaDg/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/201225344540" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://m.me/15aGQceaDg/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-messenger d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+</ul>
+            <a href ="index.html"> <h3 class="fs-2"> mr john </h3>  </a>
+
+            <ul class="web-icons">    
+                <li>  <a href="products.html"><i class="bi bi-bag d-flex justify-content-center align-items-center fs-5 border border-1   rounded-circle"></i></i></a></li>
+                <li> <span class="cart-count position-absolute  px-2 py-1 rounded-circle text-white">0</span> <i class="bi bi-cart d-flex justify-content-center align-items-center fs-5 border border-1  cart-icon  rounded-circle"></i></li>
+                <li> <span class="list-count position-absolute  px-2 py-1 rounded-circle text-white">0</span> <i class="bi bi-bag-heart d-flex justify-content-center align-items-center fs-5 border border-1  wish-icon  rounded-circle"></i> </li>
+            </ul>
+        </article>
+        </header>
+        <!-- -----------------------end header -->
+    <section class="products-section">
+        <article class="banner d-flex align-items-center flex-column gap-2 justify-content-center  ">
+            <h3 class="text-white fs-1">المتجر</h3>
+            <ul>
+                <li><a href="index.html" class="fs-3" >الرئيسية</a></li>
+                <li><span  class="fs-3" >/</span></li>
+                <li><a href="products.html" class="fs-3 active">المتجر</a></li>
+            </ul>
+        </article>
+        <article class="products-container" id="cont">
+            <article class="products-filter">
+                <ul class="flex-wrap">
+    <li><a data-filter="الكل" class="rounded-2 link px-3 p-2 active filter-link" href="#cont">الكل</a></li>
+    <li><a data-filter="تجميل" class="rounded-2 link px-3 p-2 filter-link" href="#cont">مستحضرات تجميل</a></li>
+    <li><a data-filter="مكملات" class="rounded-2 link px-3 p-2 filter-link" href="#cont">مكملات غذائية</a></li>
+    <li><a data-filter="جنسية" class="rounded-2 link px-3 p-2 filter-link" href="#cont">منتجات جنسية</a></li>
+
+                </ul>
+                <input class="p-2 rounded-2 products-input" type="text" placeholder="search your product">
+            </article>
+    <article class=" product-boxs"></article>
+
+        </article>
+    </section>
+    <!-- ///////////////////////////////--end products -->
+<footer class="p-5">
+    <article class="footer-block d-flex align-items-center flex-column">
+<h3 class="thank-text text-capitalize">
+    متجرنا بيقولك شكراً على تسوقك أونلاين معانا   
+    إحنا مقدّرين ثقتك في منتجاتنا وهنفضل دايمًا نوفرلك أفضل جودة !
+</h3>
+
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">روابط سريعة</h3>
+        <ul class="flex-column">
+            <li><a class="text-capitalize" href="index.html">الرئيسية</a></li>
+            <li><a class="text-capitalize" href="#about">من نحن</a></li>
+            <li><a class="text-capitalize" href="#services">الخدمات</a></li>
+            <li><a class="text-capitalize" href="#products">المنتجات</a></li>
+            <li><a class="text-capitalize" href="#connect">تواصل معنا</a></li>
+        </ul>
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">أدوات التسوق</h3>
+        <ul class="flex-column">
+            <li><a class="text-capitalize cart-link" href="cart.html">سلة المشتريات</a></li>
+            <li><a class="text-capitalize wislist-link" href="#">قائمة الأمنيات</a></li>
+            <li><a class="text-capitalize" href="checkout.html">تسجيل الدفع  </a></li>
+        </ul>
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">احصل على خصم 10% الآن</h3>
+        <a href="products.html" class="rounded-2 fs-3 px-5 py-2 footer-link">اطلب الآن</a>
+    </article>
+</footer>
+<!-- ------------------------------ end footer--------> 
+    <script src="js/vanilla-tilt.min.js"></script>
+    <!-- ----3d effect---- -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <!-- ---bootstrap--- -->
+    <script  defer src="js/products.js"></script>
+    <script  defer src="js/common-cases.js"></script>
+</body>
+</html>

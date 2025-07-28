@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mr john ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- -------------------------------------- product details -->
+    <ul class="mini-menu position-fixed   p-3 gap-0 rounded-4 bg-light ">
+        <li onclick="window.location.href = 'index.html'" class="col-3 d-flex flex-column justify-content-center align-items-center active  ">
+            <i class=" p-2 rounded-2 justify-content-center w-100 align-items-center d-flex  fs-4 bi bi-house"></i>
+                <span>الرئيسية</span>
+            </li>
+
+            <li onclick="window.location.href = 'products.html'" class="col-3 d-flex flex-column justify-content-center align-items-center   ">
+                    <i class="p-2 rounded-2  justify-content-center w-100 align-items-center d-flex fs-4 bi bi-cart"></i>
+                    <span>المتجر</span>
+            </li>
+
+            <li  class="col-3 d-flex flex-column justify-content-center align-items-center   ">
+                    <i class=" cart-icon p-2 rounded-2  justify-content-center w-100 align-items-center d-flex fs-4 bi bi-cart"></i>
+                    <span>العربة: <span class=" cart-count">0</span></span>
+
+            </li>
+    
+            </li>
+            <li class="col-3 d-flex  flex-column justify-content-center align-items-center ">
+                <i class=" list-icon p-2 rounded-2  justify-content-center w-100 align-items-center d-flex wish-icon  fs-4 bi bi-bag-heart"></i>
+                <span>المفضلة : <span class=" list-count">0</span> </span>
+            </li>
+    
+
+    </ul>
+    <!-- ---------------------mini menu -->
+
+    <article class="wish-list position-fixed  top-0 ">
+        <article class="list-head p-3  mb-4 align-items-center justify-content-between d-flex">
+            <i class=" fs-3 bi bi-x-circle text-white  remove-list "></i>
+            <article class="search p-2 ">
+                <input class="search-input" type="text" placeholder="search your product ">
+                <i class=" active search-icon bi bi-search text-white"></i>
+            </article>
+        </article>
+        <article class="wished-products p-3"></article>
+    </article>
+    <!-- -------------------------------wishlist -->
+<article class="shopping-cart">
+    <article class="cart-content"></article>
+    <article class="cart-btns">
+        <h3 class="subtotal">  الإجمالي: 0 جنيه   </h3>
+        <a class="checkout-btn" href="checkout.html">إتمام الشراء</a>
+    </article>
+    <i class="fs-3 bi bi-x-circle text-white remove-cart"></i>
+</article>
+    <!-- -------------------------------end cart --------------------------->
+        <!-- ------------------------------------------end components -->
+        <header class="  w-100   position-fixed top-0 start-0 "> 
+        <article class="introduction  d-flex justify-content-between align-items-center">
+<ul>
+    <li>
+        <a href="https://www.facebook.com/share/15aGQceaDg/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/201225344540" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://m.me/15aGQceaDg/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-messenger d-flex justify-content-center align-items-center fs-5 rounded-circle"></i>
+        </a>
+    </li>
+</ul>
+
+            <a href ="index.html"> <h3 class="fs-2"> mr john </h3>  </a>
+            <article class="menu-btn">
+                <article></article>
+                <article></article>
+                <article></article>
+            </article>
+            <ul class="web-icons">    
+                <li>  <a href="products.html"><i class="bi bi-bag d-flex justify-content-center align-items-center fs-5 border border-1   rounded-circle"></i></i></a></li>
+                <li> <span class="cart-count position-absolute  px-2 py-1 rounded-circle text-white">0</span> <i class="bi bi-cart d-flex justify-content-center align-items-center fs-5 border border-1  cart-icon  rounded-circle"></i></li>
+                <li> <span class="list-count position-absolute  px-2 py-1 rounded-circle text-white">0</span> <i class="bi bi-bag-heart d-flex justify-content-center align-items-center fs-5 border border-1  wish-icon  rounded-circle"></i> </li>
+            </ul>
+        </article>
+        <nav class="n-bar ">
+        <ul>
+            <li><a class="link active fs-5" href="#home">الرئيسية</a></li>
+            <li><a class="link fs-5" href="#about">من نحن</a></li>
+            <li><a class="link fs-5" href="#services">خدماتنا</a></li>
+            <li><a class="link fs-5" href="#products">المنتجات</a></li>
+            <li><a class="link fs-5" href="#contact">تواصل معنا</a></li>
+        </ul> 
+        </nav> 
+    </header>
+    <!-- ------------------------end header -->
+
+    <section class="home d-flex  justify-content-center align-items-center" id="home">
+        <article class="home-content text-center ">
+<h3 class="text-white mb-3 fs-2">دلّع صحتك واطلب منتجاتك المميزة بكل سهولة</h3>
+<p class="text-white mb-3">
+    مهما كان هدفك عضل، حرق دهون، أو مجرد نمط حياة صحي إحنا جنبك بخطوة. عندنا كل اللي بتدور عليه من مكملات أصلية 100%، تم اختيارها بعناية من أفضل الماركات العالمية.  
+    استغل العروض الحصرية، وخليك دايمًا سابق بخطوة في رحلتك الصحية. اطلب دلوقتي وخلي العناية بجسمك عادة مش مجرّد اختيار، والتوصيل لباب البيت كمان!
+</p>
+
+<a href="products.html" class="px-4 mt-2 py-2 rounded-2 text-white" title="استعرض جميع المنتجات المتاحة">اطلب دلوقتي</a>
+        </article>
+    </section>
+    <!-- ---------------------------end home -->
+    <section class="about " id="about">
+        <h3 class="   fs-2 pt-3 text-center  text-uppercase "> من نحن</h3>
+        <article class="about-box px-3 pt-5 ">
+<article class="about-text">
+    <h3 class="mb-3">عن <span class="fs-2 text-uppercase ">mr john</span></h3>
+<p class="mb-2">
+    متجر <strong>Mr. John</strong> هو وجهتك الأولى لعالم المكملات الغذائية، العناية بالبشرة، والمنتجات الصحية الأصلية. بنقدملك كل اللي جسمك محتاجه علشان توصل لأهدافك بسرعة وأمان، سواء كنت رياضي محترف أو بتدور على تحسين نمط حياتك وصحتك بشكل عام.
+</p>
+    <p class="mb-2">
+        لو بتدور على طاقة أكتر في التمرين، أو عناية بصحتك بشكل عام، أو حتى دعم للصحة الجنسية  هنا هتلاقي كل اللي محتاجه من غير لف كتير. منتجاتنا مختارة بعناية علشان تضمن نتيجة حقيقية وأمان كامل.
+    </p>
+    <p class="mb-2">
+        كل منتج عندنا من ماركات عالمية موثوقة، ومجرب من آلاف الزباين. دايمًا بنتابع آخر التطورات في عالم التغذية والمكملات علشان نوفّر لك الأفضل.
+    </p>
+
+</article>
+
+            <article class="about-img ">
+                <img src="./imgs/composition-black-friday-shopping-cart-with-copy-space.jpg" alt="img">
+            </article>
+        </article>
+    </section>
+    <article class="slide  d-flex flex-column " >
+        <article class=" p-3 w-100 slide-box"><p class=" text-white   mt-0 fs-1">اطلب الآن واحصل على خصم 5% والتوصيل مجاني لأول مرة</p></article>
+        <article class=" p-3 w-100 slide-box">  <p class=" text-white m-0   fs-1">  <a href="https://wa.me/201225344540" target="_blank" rel="noopener noreferrer">  01225344540</a> استخدم هذا الرقم للتواصل معنا </p></article>
+    </article>
+    <!-- -------------------------------------end about -->
+    <section  id="services"  class="services">
+        <h3 class="  fs-2 text-center py-4 text-uppercase">الخدمات المقدمه</h3>
+        <article class="services-boxs   p-4">
+
+<article class="services-box p-3 rounded-2">
+    <i class="mb-4 bi bi-phone"></i>
+    <h3>سهولة التواصل</h3>
+    <p>تقدر تتواصل معانا بسهولة من خلال مكالمة أو واتساب، وإحنا جاهزين نرد على كل استفساراتك في أسرع وقت.</p>
+</article>
+
+<article class="services-box p-3 rounded-2">
+    <i class="mb-4 bi bi-credit-card-2-front"></i>
+    <h3>سهولة الدفع</h3>
+    <p>نوفر لك طرق دفع متعددة وآمنة، سواء كاش عند الاستلام أو أونلاين، علشان تجربتك تكون مريحة وسلسة.</p>
+</article>
+
+<article class="services-box p-3 rounded-2">
+    <i class="fs-1 mb-4 bi bi-lock-fill"></i>
+    <h3>حماية بياناتك</h3>
+    <p>خصوصيتك تهمنا. بياناتك الشخصية ومعلومات الدفع في أمان تام مع أنظمة حماية متقدمة.</p>
+</article>
+
+
+        </article>
+    </section>
+    <!-- //////////////////////////end services -->
+    <section class="products pb-4 " id="products">
+        <h3 class=" address fs-2 text-center py-4 text-uppercase">المنتجات</h3>
+    <article class="p-3 product-boxs"></article>
+        <article class="link-box d-flex justify-content-center">
+            <a href="products.html" class=" more rounded-2   fs-3 px-5 py-2 ">المزيد من  المنتجات</a>
+        </article>
+    </section>
+    <!-- ---------------------------------end products -->
+    <section class="connect   " id="contact">
+        <article class="text-center pb-4" >
+<h3 class="mb-2 fs-2 text-uppercase">تواصل معنا</h3>
+<p>تواصل معنا واحصل على افضل المنتجات بافضل الاسعار   فريقنا جاهز يساعدك في أي وقت ويوصلك بأسرع طريقة!</p>
+
+        </article>
+    <form action="" id="contact-form" class="p-4 rounded-4 bg-white">
+        <input required name="name" class="p-3" type="text" placeholder="الاسم " />
+        <input required name="email" class="p-3" type="email" placeholder="البريد الالكتروني" />
+        <textarea required name="message" rows="4" class="p-3" placeholder="رسالتك"></textarea>
+        <button type="submit" class="submit more rounded-2 text-center fs-4 py-1">ارسال</button>
+    </form>
+    </section>
+    <!-- --------------------------------------------------- end conntect -->
+<footer class="p-5">
+    <article class="footer-block d-flex align-items-center flex-column">
+<h3 class="thank-text text-capitalize">
+    متجرنا بيقولك شكراً على تسوقك أونلاين معانا   
+    إحنا مقدّرين ثقتك في منتجاتنا وهنفضل دايمًا نوفرلك أفضل جودة !
+</h3>
+
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">روابط سريعة</h3>
+        <ul class="flex-column">
+            <li><a class="text-capitalize" href="index.html">الرئيسية</a></li>
+            <li><a class="text-capitalize" href="#about">من نحن</a></li>
+            <li><a class="text-capitalize" href="#services">الخدمات</a></li>
+            <li><a class="text-capitalize" href="#products">المنتجات</a></li>
+            <li><a class="text-capitalize" href="#connect">تواصل معنا</a></li>
+        </ul>
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">أدوات التسوق</h3>
+        <ul class="flex-column">
+            <li><a class="text-capitalize cart-link" href="cart.html">سلة المشتريات</a></li>
+            <li><a class="text-capitalize wislist-link" href="#">قائمة الأمنيات</a></li>
+            <li><a class="text-capitalize" href="checkout.html">تسجي الدفع  </a></li>
+        </ul>
+    </article>
+
+    <article class="footer-block d-flex align-items-center flex-column">
+        <h3 class="mb-3">احصل على خصم 10% الآن</h3>
+        <a href="products.html" class="rounded-2 fs-3 px-5 py-2 footer-link">اطلب الآن</a>
+    </article>
+</footer>
+
+    <!-- -----------------------------end footer -->
+    <script defer src="js/vanilla-tilt.min.js"></script>
+    <!-- ----3d effect---- -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!-- ----bootsrtap----- -->
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/ScrollTrigger.min.js"></script>
+    <!-- ----gsap----- -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="js/email.js"></script>
+    <!-- ----email.js----- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.js" integrity="sha512-+maVcOki4j7Zo1VOqbhjH/fKV7iuE9WYMdhObx1ozxz2xu3qZMVCGHOAZKLKLksakyaWllQzafnLZSGBRl3lRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/vanta.net.min.js"></script>
+<script src="js/bg.js"></script>
+    <!-- ----vanta js ---- -->
+    <script defer  src="js/common-cases.js"></script>
+    <script defer src="js/home.js"></script>
+    <!-- ----my code----- -->
+</body>
+</html>
